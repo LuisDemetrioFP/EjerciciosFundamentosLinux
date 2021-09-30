@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Variables para definir texto de entrada y definir variable de texto por defecto
+# Variables para definir texto de entrada y definir variable de texto por defecto EJERCICIO_03
 
 DEFAULT=$1
 
@@ -12,11 +12,11 @@ mkdir -p -m755 foo/{empty,dummy}/
 
 touch foo/dummy/file{1,2}.txt/
 
-# Inserta el texto 'Me encanta la bash' o el texto que hemos indicado como parametro en la ejecucion del script en el archivo file1.txt del EJERCICIO_01
+# Inserta el texto 'Me encanta la bash' o el texto que hemos indicado como parametro en la ejecucion del script en el archivo file1.txt del EJERCICIO_01, 02 y 03
 
 echo ${DEFAULT:-'Que me gusta el bash!!'} > foo/dummy/file1.txt
 
-# Vuelca el contenido de foo/dummy/file1.txt a foo/dummy/file2.txt y mueve file2.txt a la carpeta foo/empty
+# Vuelca el contenido de foo/dummy/file1.txt a foo/dummy/file2.txt y mueve file2.txt a la carpeta foo/empty Ejercicio_02
 
 cat foo/dummy/file1.txt > foo/dummy/file2.txt | mv foo/dummy/file2.txt foo/empty
 
