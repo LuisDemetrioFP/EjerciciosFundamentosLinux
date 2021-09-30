@@ -4,7 +4,7 @@
 
 echo ${1:?'Introduce una web entre " " como primer parametro'} ${2:?'SUGERENCIA: introduce una palabra entre " " para buscar en la web como segundo parametro'}
 
-#Variable para contar que el parametro 1 no este vacio (tengo que practicar mas con boleanasen bash :P)
+#Variable para contar que el parametro 1 no este vacio (tengo que practicar mas con boleanas en bash :P)
 
 count_var1=$(echo $1 | wc -w)
 
